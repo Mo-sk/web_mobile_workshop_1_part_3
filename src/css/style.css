@@ -1,0 +1,106 @@
+#app-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 40px 20px;
+    background-color: #252525;
+    color: white;
+}
+  
+#questions-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, max-content);
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#score-container {
+    position: fixed;
+    right: 40px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background: rgb(13, 110, 221);
+    padding: 10px 15px;
+    min-width: 100px;
+    min-height: 45px;
+    border-radius: 10px;
+}
+  
+#app-title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    margin: 0 0 40px 20px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#start-btn {
+    position: fixed;
+    right: 190px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+    background: rgb(13, 221, 75);
+    padding: 10px 15px;
+    min-width: 100px;
+    min-height: 45px;
+    border-radius: 10px;
+}
+
+#restart-btn {
+    position: fixed;
+    right: 300px;
+    top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    border: none;
+    outline: none;
+    background: rgb(245, 48, 48);
+    padding: 10px 15px;
+    min-width: 100px;
+    min-height: 45px;
+    border-radius: 10px;
+}
+  
+.popup {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 500px;
+    height: max-content;
+    z-index: 100;
+    transition: all 400ms ease-out;
+}
+
+.popup.active {
+    display: block;
+}
+
+.popup.fadeout {
+    opacity: 0;
+    transition: all 500ms ease-out;
+}
